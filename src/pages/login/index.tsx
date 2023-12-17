@@ -1,11 +1,12 @@
 import FormLogin from "@/components/formlogin"
 
 export default function Page() {
-  console.log(process.env.DB_HOST)
-  var test = String(process.env.DB_HOST);
+  console.log(process.env.DB_HOST);
+  console.log(process.env.DB_USER);
+  console.log(process.env.DB_PASS);
   return (
     <>
-      <h1>{test}</h1>
+      <h1>Test Login</h1>
       <FormLogin />
     </>
   )
